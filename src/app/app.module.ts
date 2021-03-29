@@ -12,6 +12,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 import { ProductService } from './shared/product.service';
+import { PageNotFoundModule } from './page-not-found.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ProductService } from './shared/product.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PageNotFoundModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
